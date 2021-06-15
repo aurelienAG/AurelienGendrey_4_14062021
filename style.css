@@ -1,4 +1,5 @@
 body {
+    width:100%;
     margin: 0;
     padding: 0;
     background: #FFF;
@@ -91,7 +92,6 @@ a:hover {
 }
 
 .texture-paper::before {
-    background: url("img/texture-paper.png");
     background-size: 280px 280px;
 }
 
@@ -277,10 +277,12 @@ a:hover {
     margin-left: 0;
 }
 
-.row.row-no-gutters > [class^="col-"],
+/*.row.row-no-gutters > [class^="col-"]*/
 .row.row-no-gutters > [class*=" col-"] {
     padding-right: 0;
-    padding-left: 0;
+    padding-left: 0; 
+    padding-top: 3rem;
+    padding-bottom:3rem;
 }
 
 #bloc-1-hero h1 {
@@ -360,6 +362,22 @@ a:hover {
     float: right;
     position: relative;
     z-index: 2;
+}
+
+#navContact{
+    padding-right: 30px;
+    padding-bottom: 3rem;
+}
+
+#navContact li{
+    list-style-type: none; 
+    margin-right: 2rem;
+    font-weight: bolder;
+} 
+
+#navContact a 
+{
+    text-decoration: none; 
 }
 
 @media (min-width: 768px) {
@@ -456,7 +474,7 @@ nav .caret {
 .btn-d,
 .btn-d:hover,
 .btn-d:focus {
-    color: #FFF;
+   /*color: #FFF;*/
     background: rgba(0, 0, 0, .3);
 }
 
@@ -476,7 +494,7 @@ button {
 }
 
 .icon-md {
-    font-size: 30px!important;
+    font-size: 40px!important;
 }
 
 .icon-lg {
@@ -505,9 +523,30 @@ button {
     border-radius: 0 0 29px 29px;
 }
 
+#form_1{
+    margin: auto; 
+    padding-right: 13rem;
+    padding-left: 13rem;
+    width: 100%;
+}
+
 .form-control {
-    border-color: rgba(0, 0, 0, .1);
-    box-shadow: none;
+    border: solid 2px rgba(14, 13, 13, 0.486);
+    box-shadow: none; 
+    border-radius: 10px;
+    padding: 0.5rem;
+    margin: 0.3rem 0 1rem 0; 
+    text-align: justify;
+    width:50%;
+    display: flex;
+    flex-direction: column;
+} 
+
+#btnSubmit{
+    border-radius: 10px; 
+    cursor: pointer;
+    width:52%; 
+    border: #333333;
 }
 
 .scrollToTop {
@@ -647,7 +686,7 @@ h5,
 h6,
 p,
 label,
-.btn,
+/*.btn,*/
 a {
     font-family: "helvetica";
     font-weight: 400;
@@ -677,7 +716,7 @@ a {
 }
 
 p {
-    font-size: 11px;
+    font-size: 16px;
 }
 
 .tight-width-whitespace {
@@ -702,6 +741,11 @@ p {
 .social {
     max-width: 400px;
     margin: auto auto auto auto;
+    display: block; 
+} 
+
+.social span{
+    color:#221200;
 }
 
 h2 {
@@ -726,6 +770,7 @@ h1 {
     color: #333333!important;
 }
 
+
 h4 {
     color: #333333!important;
 }
@@ -735,8 +780,24 @@ h4 {
     margin-top: 24px;
 }
 
+.quote{
+    font-weight: bold; 
+    width:90%; 
+    font-style: italic;
+}
+
+.author_quote{
+    margin-left:-3rem;
+}
+
 .white {
-    color: #FFFFFF!important;
+    color:#f8983d!important;
+    font-weight: bolder; 
+    font-size: 1.3rem;
+}
+
+.contact_footer{
+    font-size:1.2rem;
 }
 
 .portfolio-thumb {
@@ -753,7 +814,7 @@ h4 {
 }
 
 .black-background {
-    background-color: rgba(165, 147, 99, 0.7);
+    background-color: rgba(47, 35, 1, 0.7);
     padding: 40px 40px 40px 40px;
 }
 
@@ -771,21 +832,39 @@ h4 {
 }
 
 .bgc-atomic-tangerine {
-    background-color: #F3976C;
+    background-color: /*#F3976C*//*#f17135*/#221200;
+}
+
+#bloc-6{
+    background-color: #221200;
+} 
+
+#bloc-8{
+    background-color:#221200;
+} 
+#bloc-8 i{ 
+     color:#f8983d;
+}
+
+#socials_2{
+    display: flex;
 }
 
 .tc-white {
-    color: #F3976C!important;
+    color:#f8983d!important;
+    text-align: center;
+    font-weight: bold;
 }
 
 .btn-atomic-tangerine {
-    background: #F3976C;
-    color: #FFFFFF!important;
+    background: #f8983d;
+    color: #221200!important;
+    font-weight: bolder;
 }
 
 .btn-atomic-tangerine:hover {
-    background: #c27956!important;
-    color: #FFFFFF!important;
+    background: /*hsl(19, 47%, 55%)*/#221200!important;
+    color: #f8983d!important;
 }
 
 .ltc-white {
@@ -797,7 +876,7 @@ h4 {
 }
 
 .ltc-atomic-tangerine {
-    color: #F3976C!important;
+    color: #f8983d!important;
 }
 
 .ltc-atomic-tangerine:hover {
@@ -822,7 +901,11 @@ h4 {
 }
 
 .bg-presentation {
-    background-image: url("img/image-de-presentation.bmp");
+    background-image: url("img/image-de-presentation.jpg");
+} 
+
+.b-parallax {
+    background-attachment: scroll;
 }
 
 @media (max-width: 1024px) {
@@ -846,18 +929,22 @@ h4 {
     .nav-center.navbar .nav {
         max-width: 100%
     }
+    #form_1{
+        margin: auto; 
+        padding-right: 8rem;
+        padding-left: 8rem;
+        width: 125%;
+    }
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
     .b-parallax {
         background-attachment: scroll;
-    }
+    } 
 }
 
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
-    .b-parallax {
-        background-attachment: scroll;
-    }
+    
 }
 
 @media (max-width: 991px) {
@@ -1025,6 +1112,12 @@ h4 {
     .blocsapp-device-iphone5 img {
         width: 180px;
         height: 320px;
+    }
+    #form_1{
+        margin: auto; 
+        padding-right: 2rem;
+        padding-left: 2rem;
+        width: 130%;
     }
 }
 
