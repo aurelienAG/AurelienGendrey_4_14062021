@@ -397,7 +397,7 @@ a:hover {
     display:flex; 
     align-items: center;
     justify-content: center;
-    background-image:url(img/la-chouette-agence-banniere\(old\).jpg);
+    /*background-image:url(img/la-chouette-agence-banniere\(old\).jpg);*/
 } 
 
 .backgroundMessage{
