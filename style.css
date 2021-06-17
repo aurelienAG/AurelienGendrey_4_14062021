@@ -438,13 +438,9 @@ a:hover {
 #btnSubmit{
     border-radius: 10px; 
     cursor: pointer;
-    width:52%; 
+    width:72%; 
     border: #333333;
 }
-
-.infosContactAgency{
-    margin-left:1rem;
-}  
 
 .contact_footer{
     width:auto;
@@ -454,8 +450,8 @@ a:hover {
 }
 
 .socials_2{
-    width:400px;
-    margin: auto;
+   padding-left: 32%;
+   padding-right: 32%;
     display:flex;
     justify-content: space-between;
 } 
@@ -998,7 +994,7 @@ h4 {
     } 
 }*/
 
-@media (max-width: 991px) {
+/*@media (max-width: 991px) {
     .container {
         width: 100%;
     }
@@ -1025,7 +1021,7 @@ h4 {
         padding-left: constant(safe-area-inset-left);
         padding-right: constant(safe-area-inset-right);
     }
-}
+}*/
 
 @media (max-width: 767px) {
     .page-container {
@@ -1109,7 +1105,7 @@ h4 {
     }
     .nav-invert .navbar-toggle {
         float: left;
-        margin-left: 10px;
+        /*margin-left: 10px;*/ 
     }
     .bloc {
         padding-left: 0;
@@ -1188,8 +1184,8 @@ h4 {
     }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 767px) /*{
     .bloc-mob-center-text {
         text-align: center;
-    }
+    }*/
 }
